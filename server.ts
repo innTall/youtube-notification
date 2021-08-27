@@ -161,6 +161,10 @@ app.post('/youtube/unsubscribe', async (req, res) => {
   }
 });
 
+app.get('/', (req, res) => {
+  res.send('<h1>YouTube Notification App</h1>')
+});
+
 app.listen(port, () => {
   console.log('App listening on port: ', port);
 });
