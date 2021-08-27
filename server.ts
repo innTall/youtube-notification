@@ -4,7 +4,7 @@ import FormData from 'form-data';
 import nodeFetch from 'node-fetch';
 
 const port = process.env.PORT || 3000;
-const pshbUrl = 'https://pubsubhubbub.appspot.com/subscribe';
+const pshbUrl = 'https://pubsubhubbub.appspot.com/';
 
 async function sendPshbRequest(req: express.Request, channelId: string, subscribe = true) {
   //  app URL
