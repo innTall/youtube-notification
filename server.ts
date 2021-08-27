@@ -133,7 +133,7 @@ app.post('/youtube/subscribe', async (req, res) => {
     res.end('subscribed to ' + channelId);
   } catch (error) {
     console.log('error', error);
-    res.status(500).end(error.message);
+    res.status(500).end();
   }
 });
 
@@ -157,7 +157,7 @@ app.post('/youtube/unsubscribe', async (req, res) => {
     res.end('unsubscribed to ' + channelId);
   } catch (error) {
     console.log('error', error);
-    res.status(500).end(error.message);
+    res.status(500).end();
   }
 });
 
